@@ -1,8 +1,74 @@
 <html>
 	<head>
-		<!-- MetaData, Title, Script, CSS, Open Graph -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"
+		/>
+		<meta name="title" content="외딴 별과 행성" />
+		<meta name="description" content="🌠 외딴 별과 행성 - 경제환" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="외딴 별과 행성" />
+    <meta property="og:description" content="🌠 외딴 별과 행성 - 경제환" />
+    <meta property="og:site_name" content="외딴 별과 행성" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://images.unsplash.com/11/dreamcatcher.jpg" />
+
+		<!-- Favicon -->
+    <meta name="shortcut icon" href="./images/favicon.png" type="image/png" />
+		<link rel="icon" href="./images/favicon.png" type="image/png" />
+		
+		<title>외딴 별과 행성</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/vendor/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/vendor/uikit-rtl.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/custom.css" />
+		
+		<!-- Javascript -->
+    <script src="./js/vendor/uikit.min.js"></script>
+    <script src="./js/vendor/uikit-icons.min.js"></script>
+    <script src="./js/custom.js"></script>
 	</head>
 	<body>
 		<!-- Container -->
+		<div class="container">
+			<div class="content">
+				<div onclick="rotateCard(event)" id="haruhuey" class="cards">
+					<div class="front-card front">
+						<div class="left-flex">
+							<h1 class="tg-bold" style="color: #FFF;">외딴 별과 행성</h1>
+							<h4 class="tg-normal" style="color: #FFF;">경제환</h4>
+						</div>
+						<div class="circle">
+							<span uk-icon="icon: more-vertical; ratio: 2"></span>
+						</div>
+					</div>
+					<div class="back-card back">
+						<article class="letter-text">
+							<div style="text-align: start;">
+								To. 누군가에게...<br/>
+                우리 앞에 놓여진 건 좋을 테지만 무뎌지겠지<br/>
+                환상 같은 날은 그 꿈이 깨져도 너는 특별해 줘<br/>
+                평범함 속에 넌 별 모양인 거야<br/>
+                이 우주 속에서 외딴 별인 거야 그 주위를 맴도는 난 행성인 거야
+							</div>
+							<div style="text-align: end;">From. HaruHuey</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="spacing-small"></div>
+			<!-- Social Share -->
+			<div class="social">
+				<a uk-tooltip="페이스북 공유하기!" onclick="shareFacebook(event)" class="uk-icon-button" uk-icon="facebook"></a>
+				<div class="spacing-small"></div>
+				<a uk-tooltip="트위터 공유하기!" onclick="shareTwitter(event)" class="uk-icon-button" uk-icon="twitter"></a>
+				<div class="spacing-small"></div>
+				<a uk-tooltip="카카오스토리 공유하기!" onclick="shareKakaoStory(event)" class="uk-icon-button" uk-icon="social"></a>
+			</div>
+		</div>
 	</body>
 </html>
